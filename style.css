@@ -1,0 +1,65 @@
+/*Syntax of CSS
+Selector {property: value; property: value;}
+*/
+/*(*) symbol universal selector, select all HTML elements*/
+* {
+	font-family: "Roboto", sans-serif;
+}
+h1, h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+img  {
+	height: 250px;
+	width: 250px;
+}
+#landing {
+	/*vh-> viewport height -> measured % of the height of
+	 the device youre viewing your webpage (80%)*/
+	height: 80vh;
+	/*flexbox -> display:flex ->allow to arrange te elements 
+	inside the landing sec vertically & horizontally.
+	default, arranges elements inside the parent element in a row.*/
+	display: flex;
+	/*to change the direction of the elements inside an element w/
+	'display: flex'.
+	it changes the elements in a column.*/
+	flex-direction: column;
+	/*arranges elements vertically if the flex items are in a row,
+	it also arranges elements horizontally if the flex items are in 
+	a column.
+	arranges all flex items to be centered horizontally.*/
+	align-items: center;
+	/*'justify: content' -> arranges elements horizontally if the
+	flex items are in a row. However, it arranges elements horizontally
+	if the flex items are in a column.
+	'justify-content: center' -> arranges all flex items in the
+	flex parent to be centered vertically if the flex items are in a column.*/
+	justify-content: center;
+}
+
+#gallery {
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+.tools {
+	/*line around the element*/
+	border: 5px solid #f2f2f2;
+	/*space outside the element*/
+	margin: 20px;
+	/*space inside the element*/
+	padding: 25px;
+	height: 200px;
+	/*% based on the total width of the parent element*/
+	width: 75%;
+}
+html {
+	scroll-behavior: smooth;
+	
+}
